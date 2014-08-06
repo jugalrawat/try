@@ -1,0 +1,17 @@
+<h1>Show All User</h1>
+
+<table border="1">
+  <tr>
+    <th style="width: 100px">Title</th>
+    <th style="width: 100px">Text</th>
+  </tr>
+
+  <% @user.each do |u| %>
+
+    <tr>
+      <td><%= u.title%></td>
+      <td><%= u.text%></td>
+    </tr>
+  <%end%>
+
+</table>
